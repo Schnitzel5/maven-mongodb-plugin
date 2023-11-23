@@ -22,14 +22,10 @@
 package com.syncleus.maven.plugins.mongodb;
 
 import de.flapdoodle.embed.mongo.MongodProcess;
-import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugin.MojoExecutionException;
 import org.apache.maven.plugin.MojoFailureException;
 import org.apache.maven.plugins.annotations.LifecyclePhase;
 import org.apache.maven.plugins.annotations.Mojo;
-import org.apache.maven.plugins.annotations.Parameter;
-
-import javax.inject.Inject;
 
 /**
  * When invoked, this goal stops an instance of mojo that was started by this
@@ -49,7 +45,7 @@ public class StopMongoMojo extends AbstractMongoMojo {
     }
 
     @Override
-    public void start() throws MojoExecutionException, MojoFailureException {
+    public void start() throws MojoFailureException {
         final MongodProcess mongod = (MongodProcess) getPluginContext().get(StartMongoMojo
             .MONGOD_CONTEXT_PROPERTY_NAME);
 
