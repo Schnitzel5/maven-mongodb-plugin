@@ -14,7 +14,7 @@
  * 2604 South 12th Street
  * Philadelphia, PA 19148
  */
-package com.schnitzel.maven.plugins.mongodb;
+package com.syncleus.maven.plugins.mongodb;
 
 import com.mongodb.BasicDBList;
 import com.mongodb.BasicDBObject;

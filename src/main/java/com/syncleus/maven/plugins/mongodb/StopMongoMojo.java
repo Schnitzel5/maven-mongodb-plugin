@@ -19,7 +19,7 @@
  * https://github.com/joelittlejohn/embedmongo-maven-plugin as of 5/16/2015.
  * Original source was Copyright (c) 2012 Joe Littlejohn
  */
-package com.schnitzel.maven.plugins.mongodb;
+package com.syncleus.maven.plugins.mongodb;
 
 import de.flapdoodle.embed.mongo.MongodProcess;
 import org.apache.maven.plugin.MojoFailureException;

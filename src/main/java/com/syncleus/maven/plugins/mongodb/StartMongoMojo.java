@@ -19,11 +19,11 @@
  * https://github.com/joelittlejohn/embedmongo-maven-plugin as of 5/16/2015.
  * Original source was Copyright (c) 2012 Joe Littlejohn
  */
-package com.schnitzel.maven.plugins.mongodb;
+package com.syncleus.maven.plugins.mongodb;
 
 import com.mongodb.*;
-import com.schnitzel.maven.plugins.mongodb.log.Loggers;
-import com.schnitzel.maven.plugins.mongodb.log.Loggers.LoggingStyle;
+import com.syncleus.maven.plugins.mongodb.log.Loggers;
+import com.syncleus.maven.plugins.mongodb.log.Loggers.LoggingStyle;
 import de.flapdoodle.embed.mongo.*;
 import de.flapdoodle.embed.mongo.config.*;
 import de.flapdoodle.embed.mongo.distribution.Feature;
