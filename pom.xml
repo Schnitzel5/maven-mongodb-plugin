@@ -27,7 +27,7 @@
         <version>6</version>
     </parent>
 
-    <groupId>com.github.Schnitzel5</groupId>
+    <groupId>com.schnitzel.maven.plugins</groupId>
     <artifactId>mongodb-maven-plugin</artifactId>
     <version>1.2.0</version>
     <packaging>maven-plugin</packaging>

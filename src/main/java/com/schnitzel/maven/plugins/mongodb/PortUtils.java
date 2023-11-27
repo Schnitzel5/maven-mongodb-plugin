@@ -19,18 +19,25 @@
  * https://github.com/joelittlejohn/embedmongo-maven-plugin as of 5/16/2015.
  * Original source was Copyright (c) 2012 Joe Littlejohn
  */
-package com.syncleus.maven.plugins.mongodb.log;
+package com.schnitzel.maven.plugins.mongodb;
 
-import de.flapdoodle.embed.process.io.IStreamProcessor;
+import java.io.IOException;
+import java.net.ServerSocket;
 
-public class NoopStreamProcessor implements IStreamProcessor {
+public final class PortUtils {
 
-    @Override
-    public void process(final String block) {
+    private PortUtils() {
     }
 
-    @Override
-    public void onProcessed() {
+    public static int allocateRandomPort() {
+        try {
+            final ServerSocket server = new ServerSocket(0);
+            final int port = server.getLocalPort();
+            server.close();
+            return port;
+        } catch (final IOException e) {
+            throw new RuntimeException("Failed to acquire a random free port", e);
+        }
     }
 
 }
