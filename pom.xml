@@ -29,7 +29,7 @@
 
     <groupId>com.github.Schnitzel5</groupId>
     <artifactId>mongodb-maven-plugin</artifactId>
-    <version>1.2.1</version>
+    <version>1.2.0</version>
     <packaging>maven-plugin</packaging>
 
     <name>maven-mongodb-plugin</name>
